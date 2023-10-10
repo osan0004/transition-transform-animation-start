@@ -124,6 +124,51 @@
 	animation-delay: 1s;
 }
 
+
 @keyframes moveAround{
-	
+	0%, 100%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(200px, 0px)px;
+
+	}
+	50%{
+		transform: translate(200px, 200px);
+
+	}
+	75%{
+		transform: translate(0px, 200px);
+
+	}
+}
+
+.animation .b2{
+	/* name duration, iteration-count, timing-function & direction */
+	animation: moveAround 4s infinite ease-in-out alternate;
+}
+
+@keyframes flyOut{
+	0%{
+		transform: scale(.5) rotateX(0deg) translateX(0);
+	}
+
+	100%{
+		transform: scale(1) rotateX(180deg) translateX(600px);
+
+	}
+}
+
+.animation .b3{
+	/* name duration, iteration-count, timing-function & direction */
+	animation: flyOut 3s infinite ease-in-out alternate;
+}
+
+.animation .b4{
+	/* name duration, iteration-count, timing-function & direction */
+	animation: flyOut 3s infinite cubic-bezier(1,-0.31,.57,1.24) alternate;
+}
+
+.animation .b4:hover{
+	animation-play-state: paused;
 }
