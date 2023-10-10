@@ -35,3 +35,10 @@
 	background-color: #e89380;
 	/*purple*/
 }
+
+.transform{
+	transition-property:background;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.5s;
+}
